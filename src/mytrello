@@ -1,0 +1,26 @@
+**
+ * 
+1. Créer le projet
+2. Ajouter le titre "vérification du code" dans app.html
+3. On créer une variable code et on va l'initialiser avec une string vide dans le parent. Elle nous servira à stocker le code. C'est à cette variable qu'on ajoutera les nouveau caractères
+4. On va créer un composant code. Celui-ci va recevoir du parent la valeur du code et l'afficher.
+5. Dans le parent, on va créer un tableau avec tous les caractères.
+6. On va créer un composant key 
+7. Dans la structure du parent, on va créer une div. Et à l'intérieur de cette div, on bouclera le tableau sur le composant key créer pour pouvoir afficher la valeur du bouton. 
+8. Dans le composant html key, on va ajouter une fonction au click
+9. Dans la class du composant vous aller créer la fonction au click, cette fonction prend en argument la valeur de la key
+10. Vous allez créer votre Output dans la class key de type EventEmitter
+11. Vous allez lier cet output à la fonction précedemment créer. En gros la fonction emet l'ouput avec la valeur de la key.
+12. Dans le html parent, vous aller créer le lien entre l'output et la fonction du parent à appeler (qu'on n'a pas encore crée)
+13. On va créer la fonction dans le parent qui sert à ajouter un nouveau caractère à notre "code"
+14. On crée un composant action que l'on importe dans le parent
+15. Dans ce composant, on créer 3 boutons
+16. Dans la class de ce composant on créer un output pour chaque fonction (qui n'a pas encore été créer)
+17. On créer 3 fonction : remove, reset et check
+18. On va lier chaque fonction à son bouton dans le html
+19. On lie chaque fonction à son output dans la class
+20. Dans le parent, on va créer une fonction qui retire le dernier élément du "code"
+21. Dans le parent, on créer une fonction qui va reset le code
+22. Dans le parent, on créer une fonction qui check le code
+23. Dans le html parent, vous aller créer le lien entre chaque output et sa fonction correspondante du parent.
+*/

@@ -1,0 +1,19 @@
+
+<h1>Verification du code</h1>
+<!-- utilise le selecteur de l'enfant dans le parent ici app-scren et app-key  -->
+
+<p>Code:</p>
+<div class="container-code" >
+  <!-- on boucle sur le tableau code initialiser au dbt et on l'envoie à l'enfant screen qui va utiliser dans sa class @Input()newValueCode!:string pour recuperer chq valeur du tableau et l'afficher dans son html-->
+  <!-- newValueCode coorespond a la varible  dans srenn.ts -->
+<app-screen  *ngFor="let newValue of code"[newValueCode]="newValue"></app-screen>
+</div>
+<div class="position">
+  <!-- Dans app-key on lit l'enfant avec son @Output dont son nom est newItemEvent à la methode ou fonction addnewKey de son parent On a un transfert reel de donnés-->
+   <!-- on va transmettre les données recu  de l'enfant key au parent qui va les mettre dans le tableau code qui est en  string ->ensuite le parent va bouclé sur le component screen avec le nouveau tableau code et screen va afficher les elements cliquée dans le html  -->
+  <app-key (newItemEvent)="addnewKEY($event)" *ngFor="let key of  keyboard" [itemkey]="key"></app-key>
+   
+</div>
+
+  
+<app-actions></app-actions>

@@ -1,0 +1,9 @@
+.position{
+    display: flex;
+    gap:30px;
+    width:min(700px,100%);
+    flex-wrap: wrap;
+}
+.container-code{
+    display:flex;
+}
