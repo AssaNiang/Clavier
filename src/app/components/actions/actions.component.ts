@@ -6,16 +6,17 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./actions.component.css']
 })
 export class ActionsComponent {
+  
 @Output()removeEvent= new EventEmitter<string>();
-addRemove(value:string){
-  this.removeEvent.emit(value);
+addRemove(){
+  this.removeEvent.emit();
 }
 @Output() resetEvent=new EventEmitter<string>();
-addReset(value:string){
-  this.resetEvent.emit(value);
+addReset(){
+  this.resetEvent.emit();
 }
 @Output()checkEvent= new EventEmitter<string>();
-addCheck(value:string){
-  this.checkEvent.emit(value);
+addCheck(){
+  this.checkEvent.emit();
 }
 }
