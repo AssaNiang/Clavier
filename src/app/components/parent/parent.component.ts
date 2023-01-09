@@ -23,6 +23,9 @@ export class ParentComponent {
     this.code = [];
   }
   addCheck() {
-  // return this.code =["A","S","S","A"] ?alert("bien joué"): alert("essaye encore");
+    const ArrayString=this.code.join("");
+    console.log("code-list",ArrayString);
+   return ArrayString ==="assa"?alert("bien joué"): alert("essaye encore");
+  //  return this.code =["A","S","S","A"] ?alert("bien joué"): alert("essaye encore");
   }
 }
