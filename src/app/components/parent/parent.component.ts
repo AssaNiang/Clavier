@@ -1,5 +1,5 @@
-import { outputAst } from '@angular/compiler';
-import { Component, Output } from '@angular/core';
+
+import { Component, } from '@angular/core';
 
 @Component({
   selector: 'app-parent',
@@ -8,7 +8,6 @@ import { Component, Output } from '@angular/core';
 })
 export class ParentComponent {
   code: string[] = [];
-  // code: string = "";
   keyboard: string[] = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
   addnewKEY(newkey: string) {
@@ -26,6 +25,5 @@ export class ParentComponent {
     const ArrayString=this.code.join("");
     console.log("code-list",ArrayString);
    return ArrayString ==="assa"?alert("bien joué"): alert("essaye encore");
-  //  return this.code =["A","S","S","A"] ?alert("bien joué"): alert("essaye encore");
   }
 }
